@@ -32,6 +32,11 @@ jobs:
       - name: Install dependencies
         working-directory: frontend
         run: npm install
+      - name: Report dependency audit
+        working-directory: frontend
+        run: |
+          npm audit --json > npm-audit.json || true
+          node -e "const a=require('./npm-audit.json'); console.log(JSON.stringify(Object.entries(a.vulnerabilities || {}).map(([name,v]) => ({name,severity:v.severity,range:v.range,fixAvailable:v.fixAvailable,via:v.via.map(x => typeof x === 'string' ? x : x.title)})), null, 2))"
       - name: Run frontend tests
         working-directory: frontend
         run: npm test
