@@ -89,6 +89,10 @@ A API fica em `http://localhost:8080/api`, Swagger em `/api/swagger-ui.html` e f
 6. Implementar indicadores, dashboard real, relatórios PDF/Excel.
 7. Testes de integração, segurança e preparação para produção.
 
-## Licença
+## License
 
-Este projeto é distribuído sob a licença [MIT](LICENSE). Você pode usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e comercializar o software, desde que mantenha o aviso de copyright e o texto da licença nas cópias ou partes substanciais. O software é fornecido “como está”, sem garantias. Consulte o arquivo [LICENSE](LICENSE) para o texto integral.
+This project is licensed under the [MIT License](LICENSE).
+
+The MIT License permits use, copying, modification, merging, publishing, distribution, sublicensing, and commercial use, provided that the copyright notice and permission notice are included in all copies or substantial portions of the Software.
+
+The Software is provided "AS IS", without warranty of any kind. See the [LICENSE](LICENSE) file for the complete license terms.
