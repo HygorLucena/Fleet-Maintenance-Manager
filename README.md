@@ -62,7 +62,7 @@ Resumo:
 
 1. Instale Java 21, Maven 3.9+, Node.js LTS e MySQL 8.
 2. Configure o banco com `database/local-setup.sql`.
-3. Configure variáveis copiando `backend/.env.example` para `.env` no ambiente local e informe credenciais fortes.
+3. Configure as variáveis de ambiente conforme `backend/.env.example` e `docs/development-guide.md` (Spring Boot não carrega `.env` automaticamente).
 4. Em `backend/`: `mvn clean test` e `mvn spring-boot:run`.
 5. Em `frontend/`: `npm install`, copie `.env.example` para `.env.local` e execute `npm run dev`.
 
