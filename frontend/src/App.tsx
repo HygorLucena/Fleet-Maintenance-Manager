@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useState } from "react";
+import { FormEvent, ReactElement, useEffect, useState } from "react";
 import { BrowserRouter, Link, Navigate, NavLink, Outlet, Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import {
   Activity, AlertTriangle, BarChart3, Boxes, CalendarDays, ChevronDown, ClipboardList,
@@ -16,7 +16,7 @@ const navigation = [
   { label: "Relatórios", path: "/relatorios", icon: BarChart3 },
 ];
 
-function Protected({ children }: { children: JSX.Element }) {
+function Protected({ children }: { children: ReactElement }) {
   return getAccessToken() ? children : <Navigate to="/login" replace />;
 }
 
