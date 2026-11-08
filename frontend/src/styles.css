@@ -65,3 +65,22 @@ footer{font-size:10px;color:#a0aab4;text-align:center;padding:26px 0 0}footer sp
 @media(max-width:1100px){.metrics-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.page{padding:28px 24px}}
 @media(max-width:760px){.sidebar{transform:translateX(-100%);transition:transform .2s}.sidebar.sidebar-open{transform:translateX(0)}.main-content{margin-left:0}.topbar{padding:0 18px;height:60px}.mobile-menu{display:block}.breadcrumb{margin-right:auto;margin-left:12px}.environment{display:none}.page{padding:25px 17px}.page-heading{align-items:flex-start;flex-direction:column}.date-chip{max-width:100%}.dashboard-grid{grid-template-columns:1fr}.metrics-grid{gap:10px}.metric-card{padding:14px;min-height:125px}.metric-top{font-size:10px}.metric-value{font-size:23px}}
 @media(max-width:390px){.metrics-grid{grid-template-columns:1fr}.section-title{align-items:flex-start;gap:10px;flex-direction:column}}
+
+.primary-button,.secondary-button{border:0;border-radius:6px;padding:10px 14px;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:7px}
+.primary-button{background:#173b58;color:#fff}.primary-button:hover{background:#245777}.primary-button:disabled{opacity:.6;cursor:wait}
+.secondary-button{background:#eef2f6;color:#526477;border:1px solid #dfe6ec}
+.equipment-form{margin-bottom:16px}.equipment-form h2,.table-toolbar h2{font:700 14px Manrope,sans-serif;color:#25384b;margin-bottom:14px}
+.form-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.equipment-form label,.login-card label{display:grid;gap:6px;font-size:11px;font-weight:600;color:#657689}
+.equipment-form input,.login-card input,.search-box input{width:100%;border:1px solid #dfe6ec;border-radius:5px;padding:10px 11px;font:400 12px 'DM Sans',sans-serif;color:#26394c;outline:none}
+.equipment-form input:focus,.login-card input:focus,.search-box input:focus{border-color:#6c9ab7;box-shadow:0 0 0 3px #eaf2f7}
+.form-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}
+.table-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:16px}
+.table-toolbar h2{margin:0}.table-toolbar p{font-size:10px;color:#8a98a6;margin-top:5px}
+.search-box{display:flex;gap:6px}.search-box input{min-width:220px}.search-box button{border:1px solid #dfe6ec;background:#f6f8fa;border-radius:5px;padding:0 12px;font-size:11px;color:#506477}
+.table-scroll{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:11px;text-align:left}th{background:#f7f9fb;color:#7c8b99;font-size:10px;font-weight:600;white-space:nowrap}td,th{padding:12px 13px;border-bottom:1px solid #edf0f3}td{color:#617284}td strong{color:#2d4053}.status-pill{display:inline-block;background:#edf5f1;color:#43836b;padding:4px 8px;border-radius:20px;font-size:9px}
+.error-banner{background:#fff0ef;border:1px solid #f3d3d0;color:#a94f49;border-radius:6px;padding:10px 12px;font-size:11px;margin-bottom:12px;overflow-wrap:anywhere}
+.module-placeholder{min-height:260px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;gap:9px}.module-placeholder h2{font:700 15px Manrope,sans-serif;color:#30465a}.module-placeholder p{font-size:12px;color:#6f8090}.module-placeholder span{font-size:10px;color:#9aa6b1}
+.login-screen{min-height:100vh;display:grid;place-items:center;padding:20px;background:#f3f6f9}.login-card{width:min(100%,390px);background:#fff;border:1px solid #e5ebf0;border-radius:12px;padding:32px;box-shadow:0 12px 40px #20364b0d;display:grid;gap:14px}.login-mark{height:48px;width:48px;margin-bottom:4px}.login-card h1{font:800 23px Manrope,sans-serif}.login-card>p{font-size:12px;color:#8391a0;margin-top:-8px;margin-bottom:5px}.login-card small{font-size:10px;color:#9aa6b1;line-height:1.5;text-align:center;margin-top:5px}
+.logout-button{margin-top:3px}
+@media(max-width:760px){.form-grid{grid-template-columns:1fr}.table-toolbar{align-items:stretch;flex-direction:column}.search-box input{min-width:0;flex:1}.equipment-form{padding:15px}.login-card{padding:25px}}
