@@ -91,4 +91,4 @@ A API fica em `http://localhost:8080/api`, Swagger em `/api/swagger-ui.html` e f
 
 ## Licença
 
-A licença será definida antes da publicação pública do repositório.
+Este projeto é distribuído sob a licença [MIT](LICENSE). Você pode usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e comercializar o software, desde que mantenha o aviso de copyright e o texto da licença nas cópias ou partes substanciais. O software é fornecido “como está”, sem garantias. Consulte o arquivo [LICENSE](LICENSE) para o texto integral.
