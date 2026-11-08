@@ -16,6 +16,9 @@ public class UserEntity {
     @JoinTable(name="user_roles",joinColumns=@JoinColumn(name="user_id"),inverseJoinColumns=@JoinColumn(name="role_id"))
     private Set<RoleEntity> roles=new HashSet<>();
     protected UserEntity(){}
+    public UserEntity(String fullName,String email,String passwordHash,Set<RoleEntity> roles) {
+        this.fullName=fullName;this.email=email;this.passwordHash=passwordHash;this.roles=roles;
+    }
     public Long getId(){return id;} public String getFullName(){return fullName;}
     public String getEmail(){return email;} public String getPasswordHash(){return passwordHash;}
     public boolean isActive(){return active;} public Set<RoleEntity> getRoles(){return roles;}
