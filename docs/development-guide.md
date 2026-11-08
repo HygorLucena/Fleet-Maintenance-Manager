@@ -18,8 +18,18 @@
 
 ## 2. Backend
 
-1. Copie `backend/.env.example` para `backend/.env` (não versione o arquivo .env).
-2. Preencha DB_URL, DB_USERNAME, DB_PASSWORD, JWT_SECRET e as credenciais do administrador.
+1. Use `backend/.env.example` como referência. O Spring Boot não carrega arquivos .env automaticamente.
+2. Configure as variáveis no terminal, no perfil do PowerShell ou na configuração de execução da IDE. Exemplo PowerShell (ajuste os valores):
+```powershell
+$env:DB_URL="jdbc:mysql://localhost:3306/fleet_maintenance?serverTimezone=America/Recife"
+$env:DB_USERNAME="fleet_app"
+$env:DB_PASSWORD="SUA_SENHA_LOCAL"
+$env:JWT_SECRET="COLOQUE_UM_SEGREDO_ALEATORIO_COM_32_BYTES_OU_MAIS"
+$env:FLEET_ADMIN_NAME="Administrador"
+$env:FLEET_ADMIN_EMAIL="admin@local.test"
+$env:FLEET_ADMIN_PASSWORD="SENHA_FORTE_COM_12_CARACTERES_OU_MAIS"
+$env:CORS_ALLOWED_ORIGINS="http://localhost:5173"
+```
 3. O segredo JWT deve ter no mínimo 32 bytes e ser exclusivo por ambiente.
 4. No terminal, entre em `backend` e execute:
 
