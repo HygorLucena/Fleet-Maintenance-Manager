@@ -55,6 +55,9 @@ jobs:
         run: |
           npm audit --json > npm-audit.json || true
           node -e "const a=require('./npm-audit.json'); console.log(JSON.stringify(Object.entries(a.vulnerabilities || {}).map(([name,v]) => ({name,severity:v.severity,range:v.range,fixAvailable:v.fixAvailable,via:v.via.map(x => typeof x === 'string' ? x : x.title)})), null, 2))"
+      - name: Fail on high or critical vulnerabilities
+        working-directory: frontend
+        run: npm audit --audit-level=high
       - name: Run frontend tests
         working-directory: frontend
         run: npm test
